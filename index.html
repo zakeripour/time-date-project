@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="icon" href="./img/head.png">
+  <link rel="stylesheet" href="./clockstyle.css">
+  <title>تقویم و ساعت</title>
+</head>
+
+<body class="bg-light " style="direction: rtl;">
+
+  <header style="height: 240px; background-image:url(./img/sky3.jpg)">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid  mt-4">
+        <a class="navbar-brand" href="http://127.0.0.1:5500/index.html"><i
+            class="bi bi-clock fw-bolder text-white  shadow-lg"> SAAT.IR</i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item px-2">
+              <a class="nav-link text-light" aria-current="page" href="http://127.0.0.1:5500/index.html">صفحه اصلی</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-light" href="http://127.0.0.1:5500/time.html">ساعت </a>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                تقویم
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="http://127.0.0.1:5500/calendar400.html">تقویم
+                    1400</a></li>
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="http://127.0.0.1:5500/calendar401.html">
+                    تقویم1401</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex m-2">
+            <input class="form-control m-1 " type="search" placeholder="جستجو ..." aria-label="جستجو">
+            <button class="btn btn-primary " type="submit"> تایید</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="shadow p-3 mt-4 bg-body position-relative  m-sm-5 ">
+    <div class=" row bg-primary mx-auto shadow ">
+
+      <div class=" col-lg-4 bg-primary text-light p-3 fs-6  mx-auto">
+        <h4>تاریخ خورشیدی</h4>
+        <hr>
+        <p>
+          1401/02/15<br>
+          پنجشنبه 15 اردیبهشت 1401
+        </p>
+      </div>
+
+      <div class=" col-lg-4 bg-primary text-light p-3 fs-6 mx-auto">
+        <h4>تاریخ میلادی</h4>
+        <hr>
+        <p> 2022-05-05<br>
+          Tuesday - 2022 05 May </p>
+      </div>
+
+      <div class=" col-lg-4 bg-primary text-light p-3 fs-6 mx-auto">
+        <h4>تاریخ قمری</h4>
+        <hr>
+        <p>
+          ۱۴۴۳/۱۰/۰3<br>
+          الثلاثاء - 3 شوال ١٤٤٣
+        </p>
+      </div>
+
+
+
+      <div class="dropdown mx-auto" style="text-align: center;">
+        <button class="btn btn-light btn-lg dropdown-toggle mt-4  mb-2" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="top"
+          title="انتخاب ماه های سال  ">
+          تقویم اردیبهشت
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">فروردین</a></li>
+          <li><a class="dropdown-item" href="#">اردیبهشت</a></li>
+          <li><a class="dropdown-item" href="#">خرداد</a></li>
+          <li><a class="dropdown-item" href="#">تیر</a></li>
+          <li><a class="dropdown-item" href="#">مرداد</a></li>
+          <li><a class="dropdown-item" href="#">شهریور</a></li>
+          <li><a class="dropdown-item" href="#">مهر</a></li>
+          <li><a class="dropdown-item" href="#">آبان</a></li>
+          <li><a class="dropdown-item" href="#">آذر</a></li>
+          <li><a class="dropdown-item" href="#">دی</a></li>
+          <li><a class="dropdown-item" href="#">بهمن</a></li>
+          <li><a class="dropdown-item" href="#">اسفند</a></li>
+        </ul>
+      </div>
+
+      <div class=" d-block d-md-flex">
+
+        <div id="carousel" class="carousel  " data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img src="./img/farvardin.png" class="d-block w-75 m-2 mx-5 h-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+              <img src="./img/cal.png" class="d-block w-75 m-2 mx-5 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/khordad.png" class="d-block w-75 m-2 mx-5 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/tir.png" class="d-block w-75 m-2 mx-5 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/mordad.png" class="d-block w-75 m-2 mx-5 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/shahrivar.png" class="d-block w-75 m-2 mx-5 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/mehr.png" class="d-block w-75 m-2 mx-5 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/aban.png" class="d-block w-75 m-2 mx-5 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/azar.png" class="d-block w-75 m-2 mx-5 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/dey.png" class="d-block w-75 m-2 mx-5 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/bahman.png" class="d-block w-75 m-2 mx-5 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/esfand.png" class="d-block w-75 m-2 mx-5 h-100" alt="...">
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div>
+          <img src="./img/text.png" alt="text" class="w-75 m-2 mx-5 h-100">
+        </div>
+      </div>
+
+      <div class="mt-5" style="text-align: right;">
+        <h2 class=" text-light text-start fs-3 border-bottom border-2 m-1 p-2   ">
+          اوقات شرعی به افق شهرها
+        </h2>
+        <select class="form-select-lg p-2 m-4 ">
+          <option selected> تهران</option>
+          <option>شیراز</option>
+          <option>اصفهان</option>
+          <option>تبریز</option>
+          <option>کرج</option>
+          <option>مشهد</option>
+          <option>رامسر</option>
+          <option>کرمان</option>
+          <option>کرمانشاه</option>
+          <option>همدان</option>
+          <option>لاهیجان</option>
+          <option>سمنان</option>
+          <option>یزد</option>
+          <option>لرستان</option>
+          <option>گیلان</option>
+          <option>هرمزگان</option>
+          <option>بوشهر</option>
+          <option>خراسان</option>
+        </select>
+
+        <div class="d-lg-flex  mx-auto">
+          <p class="mx-3 p-1"><i class="bi bi-sunrise m-1 text-warning"></i> طلوع خورشید = 6:11</p>
+          <p class="mx-3 p-1"><i class="bi bi-sunset m-1 text-warning"></i> غروب خورشید=19:52</p>
+          <p class="mx-3 p-1"><i class="bi bi-brightness-alt-high m-1 text-warning"></i>اذان صبح = 4:35</p>
+          <p class="mx-3 p-1"><i class="bi bi-brightness-high m-1 text-warning"></i>اذان ظهر= 13:01</p>
+          <p class="mx-3 p-1 "><i class="bi bi-moon m-1 text-light"></i> اذان مغرب = 20:11</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5 ">
+      <div class=" d-sm-block" id="qlock" style="text-align: center;">
+        <!-- <img src="./img/images.jfif" alt="clock" class="bg-primary"> 1-saat axe ammade  -->
+
+<!--  2 saat 
+        <div style="width:200px ;
+        height: 200px;
+        border: 5px solid darkslategray;
+        border-radius: 50%;
+        position: relative;
+        ">
+          <div id="secondShomar" style="width: 2px;
+            height: 90px;
+            background-color: black;
+            position: absolute;
+            left: 50%;
+            bottom:  50%;
+            transform: rotate((90deg));
+            transform-origin: 0 100%;
+            ">
+
+          </div>
+        </div>
+
+        <br>
+        <h2 class="fs-4 m-5 ">07:00:02 AM</h2>
+      </div>
+    </div>
+  </div>
+  </div> -->
+  <div class="saat">
+    <img src="./img/clock2.png" class="circle" alt="clock">
+    <div id="houer-counter"></div>
+    <div id="minute-counter"></div>
+    <div id="second-counter"></div>
+    <div id="digital-clock"></div>
+
+</div>
+
+  <footer class=" p-3 bg-secondary  ">
+    <ul class="nav justify-content-center border-bottom p-4 mt-3">
+      <li class="nav-item mx-3"><a href="http://127.0.0.1:5500/index.html"
+          class="text-black text-decoration-none">خانه</a></li>
+      <li class="nav-item mx-2"><a href="http://127.0.0.1:5500/time.html" class="text-black text-decoration-none">ساعت و
+          تاریخ امروز</a></li>
+      <li class="nav-item mx-2"><a href="http://127.0.0.1:5500/form.html" class="text-black text-decoration-none">
+          انتقادات و پیشنهادات</a></li>
+      <li class="nav-item mx-2"><a href="http://127.0.0.1:5500/support.html"
+          class="text-black text-decoration-none">پشتیبانی</a></li>
+    </ul>
+    <p class="text-center text-black">&copy 2022 company, Inc</p>
+
+  </footer>
+  <script>
+    // setInterval(myLog, 1000);
+
+    // function myLog() {
+    //   const secShomar = document.getElementById("secondShomar");
+    //   let emroz = new Date();
+    //   let secDeg = 6 * emroz.getSeconds();
+    //   secShomar.style.transform = "rotate(" + secDeg + "deg)";
+    // }
+
+    setInterval(myhouer, 3600000)
+        // 1 houer=3600000 ms
+        function myhouer() {
+            const houerCounter = document.getElementById("houer-counter");
+            let emroz = new Date();
+            let houerDeg = (360 / 12) * emroz.getHours();
+            houerCounter.style.transform = "rotate(" + houerDeg + "deg)"
+        }
+        myhouer();
+
+
+        setInterval(myminute, 60000)
+        // 1minute=60000 ms
+
+        function myminute() {
+            const minuteCounter = document.getElementById("minute-counter");
+            let today = new Date();
+            let minuteDeg = 6 * today.getMinutes();
+            minuteCounter.style.transform = "rotate(" + minuteDeg + "deg)";
+        }
+        myminute();
+
+
+        setInterval(mysecond, 1000);
+        // 1s=1000ms
+
+        function mysecond() {
+            const secondCounter = document.getElementById("second-counter");
+            let time = new Date();
+            let secondsDeg = (360 / 60) * time.getSeconds();
+            secondCounter.style.transform = "rotate(" + secondsDeg + "deg)";
+        }
+        mysecond();
+
+        function time() {
+            var saat = new Date();
+            var hour = saat.getHours();
+            var minute = saat.getMinutes();
+            var second = saat.getSeconds();
+
+            var Meridiem = "";
+            if (hour >= 12) {
+                Meridiem = "PM";
+            } else {
+                Meridiem = "AM";
+            }
+
+            hour = update(hour);
+            minute = update(minute);
+            second = update(second);
+            function update(t) {
+                if (t < 10) {
+                    return "0" + t;
+                }
+                else {
+                    return t;
+                }
+            }
+            document.getElementById("digital-clock").innerHTML = hour + " : " + minute + " : " + second + " " + Meridiem;
+            setTimeout(time, 1000);
+        }
+        time();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
